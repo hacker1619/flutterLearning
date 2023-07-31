@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         drawer: Drawer(
 
         ),
-        body: Center(child: Text("Something is to sghow")),
+        body: Center(child: Text("Something is to show")),
       );
   }
 }
