@@ -10,10 +10,16 @@ class HomePage extends StatelessWidget {
       return Scaffold(
         // use Scaffold also in order to provide material app widgets
         appBar: AppBar(
-          title: Text("Catalog"),
+          title: Text(
+              "Catalog",
+               style: TextStyle(
+              fontSize: 20,
+                 fontWeight: FontWeight.bold,
+          ),
+          ),
           centerTitle: true,
           toolbarOpacity: 1,
-          toolbarHeight: 40,
+          toolbarHeight: 50,
           // shape: Shape
           backgroundColor: Colors.deepPurpleAccent,
         ),
@@ -47,7 +53,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
         ),
-        body: Center(child: Text("Something is to show")),
+        body: Center(child: Text("Home Page",style: TextStyle(fontSize: 30),)),
       );
   }
 }
