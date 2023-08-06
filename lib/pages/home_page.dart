@@ -1,4 +1,5 @@
 import 'package:app1/utility/routes.dart';
+import 'package:app1/widget/Drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,37 +24,8 @@ class HomePage extends StatelessWidget {
           // shape: Shape
           backgroundColor: Colors.deepPurpleAccent,
         ),
-        drawer: Drawer(
-
-            child: Row(
-              children: [
-                Container(
-                 // height: ,
-
-                  child: Align(
-
-                    alignment: Alignment.bottomLeft,
-                    child: ElevatedButton(
-                onPressed: (){
-        Navigator.pushNamed(context, MyRoutes.loginRoute);
-        },
-
-          child: Text(
-            "Back",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
-        ),
-                  ),
-                  // padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 100)
-
-                ),
-              ],
-            ),
-        ),
-        body: Center(child: Text("Home Page",style: TextStyle(fontSize: 30),)),
+         drawer: MyDrawer(),
+        body: Center(child: Text("home page",style: TextStyle(fontSize: 30),)),
       );
   }
 }
