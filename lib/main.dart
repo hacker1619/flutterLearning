@@ -4,6 +4,7 @@ import 'package:app1/widget/myTheme.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+// import 'package:app1/widget/';
 
 void main(){
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       darkTheme: MyTheme.darKTheme(context,),
        theme: MyTheme.lightTheme(context),
 
-       initialRoute: MyRoutes.loginRoute,
+       initialRoute: MyRoutes.homeRoute,
        routes: {
 
         // "/" : (context) => HomePage(),

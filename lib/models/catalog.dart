@@ -1,7 +1,12 @@
-import 'package:flutter/material.dart';
+class CatalogModel {
+  static final items = [
+    Item(1, "iphone1", 100, "teri kidney jaygi esme", "blue",
+        "https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UF1000,1000_QL80_.jpg")
+  ];
+}
 
-class Item{
-  final String id;
+class Item {
+  final int id;
 
   final String name;
   final int pricel;
@@ -10,9 +15,4 @@ class Item{
   final String image;
 
   Item(this.id, this.name, this.pricel, this.desc, this.color, this.image);
-
-
 }
-final products=[
-Item("12", "iphone", 1234, "baba", "golden", "babsb")
-];
